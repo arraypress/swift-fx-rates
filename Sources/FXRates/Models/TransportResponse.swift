@@ -14,6 +14,7 @@ public struct TransportResponse: Sendable, Hashable {
     /// The body, possibly empty.
     public let body: Data
 
+    /// A response as a transport produced it.
     public init(status: Int, body: Data) {
         self.status = status
         self.body = body

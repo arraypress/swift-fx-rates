@@ -35,6 +35,7 @@ public struct Conversion: Sendable, Hashable, Codable {
     /// Whether the published day is the day asked for.
     public let isExactDate: Bool
 
+    /// A conversion assembled by the package, or by a test.
     public init(
         source: Source, base: String, quote: String, rate: Decimal, amount: Decimal,
         converted: Decimal, requestedDay: String?, publishedOn: String, isExactDate: Bool

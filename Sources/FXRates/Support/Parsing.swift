@@ -7,13 +7,6 @@
 
 import Foundation
 
-/// A table, and the converted amounts the source itself worked out when it did.
-struct Parsed {
-    let table: RateTable
-    /// Frankfurter's own converted figures, keyed by quote, when an amount was sent.
-    let converted: [String: Decimal]?
-}
-
 /// Decoders for what the sources actually send, fed from recordings in tests.
 enum Parsing {
 

@@ -14,6 +14,7 @@ public struct ConversionBatch: Sendable, Hashable, Codable {
     /// The quotes asked for that the source does not carry.
     public let missing: [String]
 
+    /// A batch as the package assembled it.
     public init(conversions: [Conversion], missing: [String]) {
         self.conversions = conversions
         self.missing = missing

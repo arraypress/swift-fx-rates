@@ -36,6 +36,7 @@ public struct RateTable: Sendable, Hashable, Codable {
     /// Currencies that were asked for and the source does not carry.
     public let missing: [String]
 
+    /// A table as the package assembled it, or as a test builds one.
     public init(
         source: Source, base: String, requestedDay: String?, publishedOn: String,
         isExactDate: Bool, rates: [String: Decimal], missing: [String]

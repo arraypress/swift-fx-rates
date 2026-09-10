@@ -14,6 +14,7 @@ public struct Currency: Sendable, Hashable, Codable {
     /// The name as the source writes it: `British Pound`.
     public let name: String
 
+    /// A currency by code and name.
     public init(code: String, name: String) {
         self.code = code
         self.name = name
